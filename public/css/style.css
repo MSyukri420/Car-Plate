@@ -1,0 +1,274 @@
+
+/* -------------- Home Page ------------------------- */
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3); /* Adjust the last value (0.5) to increase or decrease darkness */
+    z-index: 1;
+  }
+
+  .carousel-item img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .carousel-caption {
+    z-index: 2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+
+
+.carousel .container {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 100%;
+  }
+
+  .carousel h4 {
+    color: white;
+  }
+
+  .carousel-item {
+    height: 105vh; /* Adjust this value as needed */
+  }
+
+  .carousel-item img {
+    height: 100%;
+    object-fit: cover; /* Ensures image covers the carousel item */
+    width: 100%;
+  }
+
+  /* Additional styles to ensure full width */
+  .carousel-inner, .carousel-item, .carousel-item img {
+    max-width: 100vw;
+    width: 100%;
+  }
+
+
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rounded-section {
+    margin-top: 70px;
+    border-radius: 15px; /* Adjust as necessary for desired roundness */
+    overflow: hidden; /* Ensure that inner content adheres to the border radius */
+    padding: 50px 0;
+}
+
+@media (max-width: 767px) {
+    .rounded-section {
+        padding: 30px 0 10px 0;
+    }
+}
+/* -------------- End Home Page --------------------- */
+
+
+/* -------------- Car Plate Page ------------------------- */
+.centered-placeholder::placeholder {
+    text-align: center;
+}
+
+/* Optional: Center the input text when it's being typed */
+.centered-placeholder {
+    text-align: center;
+}
+
+#carPlateTabs {
+    background-color: #EDF0F3; /* Darker gray color */
+}
+
+.number-plate {
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.card-image-container {
+    position: relative;
+}
+
+.navbar-brand img {
+    height: 40px;
+    width: auto;
+}
+
+.car-plate {
+    position: absolute;
+    bottom: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    padding: 1px 10px;
+    border: 1px solid white;
+    font-weight: bold;
+    color: white;
+    min-width: 80px; /* Adjust as needed */
+    font-size: calc(9px + 0.5vw); /* Responsive font size */
+    white-space: nowrap; /* Prevents text from wrapping */
+    text-align: center;
+}
+
+.card-body-text .btn-info {
+    white-space: nowrap; /* Prevents text wrapping */
+    overflow: hidden; /* Ensures text doesn't overflow the button */
+    width: 15vw; /* Adjust based on your design needs */
+    font-size: calc(5px + 0.5vw); /* Responsive font size */
+    padding: 8px;
+}
+
+.nav-item button, .nav-item button:hover {
+    color: #1A73E8;
+}
+
+@media (max-width: 767px) {
+    .car-plate {
+        font-size: calc(10px + 1vw); /* Smaller font size for smaller screens */
+        min-width: 70px; /* Adjust as needed */
+    }
+
+    .card-body-text .card-title {
+        font-size: calc(13px + 1vw); /* Smaller font size for smaller screens */
+    }
+
+    .card-body-text .btn-info {
+        font-size: calc(10px + 1vw); /* Smaller font size for smaller screens */
+        width: 32vw;
+        padding: 3px;
+    }
+
+    .card-body-text h6 {
+        line-height: normal;
+    }
+
+}
+
+/* Style the list items as a long row of buttons */
+.nav-tabs .nav-item {
+    display: inline-block;
+    margin-right: 10px; /* Adjust the spacing between buttons */
+}
+
+/* Remove the default list item bullet points */
+.nav-tabs .nav-item::before {
+    content: none;
+}
+
+.page-item.active .page-link {
+    background-color: #1A73E8; /* Active item background color */
+    border-color: #1A73E8; /* Matching border color for active item */
+    color: white; /* Text color for active item */
+}
+
+.page-link {
+    color: #fff; /* Default text color */
+}
+
+.page-link:hover {
+    color: #fff; /* Hover text color */
+    background-color: #1662c5; /* Hover background color */
+    border-color: #155cba; /* Hover border color */
+}
+
+.nav-pills .nav-link.active {
+    background-color: white; /* Change to the desired background color */
+}
+
+@media (max-width: 576px) {
+
+    .pagination .page-item {
+        display: inline; /* Keeps items in line */
+    }
+}
+
+/* -------------- End Car Plate Page --------------------- */
+
+
+/* -------------- About Us Page ------------------------- */
+.bg-gradient-dark {
+    background: linear-gradient(to top right, #344767, #667ca2); /* Adjust colors as needed */
+    border-radius: 15px; /* Adjust as necessary for desired roundness */
+  }
+/* -------------- End About Us Page ----------------------- */
+
+
+/* -------------- Live Bid Page ------------------------- */
+
+/* Remove table border and add shadow to rows */
+.table {
+    background-color: #fff; /* Background color */
+    border: none; /* Remove all borders */
+}
+
+.table th,
+.table td {
+    padding: 18px 15px; /* Cell padding */
+    text-align: center; /* Text alignment */
+    border: none;
+}
+
+.table th {
+    background-color: #f8f9fa; /* Header background color */
+    font-weight: bold; /* Header font weight */
+    border: none;
+}
+
+.table tr {
+    border: none;
+    transition: box-shadow 0.3s ease; /* Add transition for box-shadow */
+    border-bottom: 1px solid lightgray; /* Add bottom border */
+}
+
+/* Add a box-shadow to each row when hovered */
+.table tr:hover {
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1); /* Adjust the shadow properties as needed */
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+/* -------------- End Live Bid Page ----------------------- */
+
+.floating-button {
+    position: fixed;
+    right: 20px;
+    width: 50px; /* Fixed width */
+    height: 50px; /* Fixed height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1000; /* Ensure it floats above other elements */
+    color: #fff;
+    border: 0;
+    border-radius: 50%;
+    background-image: linear-gradient(195deg, #49a3f1 0%, #1A73E8 100%);
+    box-shadow: 0 3px 3px 0 rgba(26, 115, 232, 0.15), 0 3px 1px -2px rgba(26, 115, 232, 0.2), 0 1px 5px 0 rgba(26, 115, 232, 0.15);
+}
+
+.floating-button i {
+    font-size: 25px;
+}
+
+#bottom-button {
+    bottom: 20px;
+}
+
+#top-button {
+    bottom: 85px; /* Adjust based on button size and desired spacing */
+}
+
+.floating-button:hover {
+    background-image: linear-gradient(195deg, #3788d8 0%, #1A73E8 100%); /* Slightly darker gradient on hover */
+    text-decoration: none;
+    color: white;
+}
+
